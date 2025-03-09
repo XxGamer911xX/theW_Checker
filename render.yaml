@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: TheChecker
+    env: python
+    region: frankfurt # Change to your nearest region
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
